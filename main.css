@@ -1,0 +1,162 @@
+/*Reset*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body > header {
+    background-color: #2f3640;
+    padding: 16px 0;
+    color: #f5f6fa;
+    
+
+}
+
+
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+/*links no cabeçalho*/
+
+header li{
+    display: inline; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+    
+}
+
+header li a{
+    color: #f5f6fa;
+    text-decoration: none ;
+}
+
+
+
+/*container com menu*/
+
+.container{
+    width: 1366px;
+    margin: 0 auto 0 auto;
+
+
+}
+
+/*div da area dos artigos*/
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+
+.articles article img{
+    width: 100%;
+}
+
+
+
+.articles article{
+    width:30%;
+    
+}
+
+section{
+    padding: 16px 0;
+}
+
+section h2,
+.articles article{
+    margin-bottom: 16px;
+}
+
+.articles article h3{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.articles article a{
+    background-color: blue;
+    color: #fff;
+    padding: 8px;
+    /*link ler mais fica separado*/
+    display: inline-block;
+
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.articles article a:hover{
+    text-decoration: underline;
+
+}
+
+.articles article p,
+.articles article a{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.articles article h3{
+    font-size: 24px;
+}
+
+section h2{
+    font-size: 32px;
+}
+
+#sports{
+    background-color: rgba(0,255, 0, 0.1);
+}
+
+#sports .articles article a{
+    background-color: #009432;
+    
+}
+
+#economy{
+    background-color: #f8f59f;
+}
+
+#economy .articles article a{
+    background-color: #ff9f1a;
+    
+}
+
+#tech{
+    background-color: rgba(114, 158, 233, 0.394);
+}
+
+#tech .articles article a{
+    background-color: #5a90cd;
+    
+}
+
+#entret{
+    background-color: rgba(233, 141, 221, 0.394);
+}
+
+#entret .articles article a{
+    background-color: #4a1c5f;
+    
+}
+
+
+#rodape{
+    display: flex;
+    justify-content: center;
+    background-color: #2f3640;
+    color: #fff;
+    height: 20px;
+
+
+}
