@@ -59,6 +59,7 @@ header li a{
 }
 
 .articles article img{
+    height: 200px;
     width: 100%;
 }
 
