@@ -1,0 +1,8 @@
+@use 'variaveis';
+
+body{
+    background-color: variaveis.$corDeFundoPrincipal;
+    h1{
+        color: variaveis.$corDeTexto;
+    }
+}
