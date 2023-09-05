@@ -1,0 +1,127 @@
+@import 'mapas.less';
+@import 'variaveis.less';
+
+//escapings para breakpoints
+@breakpointMobile: ~"(max-width:767px)";
+
+@breakpointTablet: ~"(max-width:1023px)";
+
+
+.width100per{
+    width:100%
+};
+
+.dBlock{
+    display: block;
+};
+
+.dFlex{
+    display: flex;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: @fontStyle;
+}
+
+body{
+    background-color: #colors[bodyColor];
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1024px;
+    .width100per();
+    margin: 0 auto;
+}
+
+header{
+    background-color: #colors[headerColor];
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    .container{
+        .dFlex();
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+    }
+}
+
+.menu{
+    .dFlex();
+    li{
+        font-weight: bold;
+        margin-left: 24px;
+
+        a{
+            color: #colors[textBtnColor];
+            
+        }
+    }
+}
+
+.section{
+    padding: 56px 0;
+}
+
+.products{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 32.66%);
+    column-gap: 1%;
+    row-gap: 1%;
+    .width100per();
+
+    .product-item{
+        img{
+            .width100per();
+            border-radius: 16px;
+        }
+
+        .product-button{
+            .dBlock();
+            background-color: #colors[backBtnColor];
+            color: #colors[textBtnColor];
+            text-align: center;
+            padding: 8px 0;
+            border-radius: 8px;
+            margin-top: 8px;
+            
+            &:hover{
+                background-color: #colors[hoverBtnColor];
+            }
+
+        }
+    }
+}
+
+@media @breakpointTablet{
+    .container{
+        max-width: 80%;
+    }
+
+    .products{
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+    }
+}
+
+@media @breakpointMobile{
+    .products{
+        .dBlock();
+    }
+
+    .product-item{
+        margin-bottom: 32px;
+    }
+}
