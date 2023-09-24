@@ -1,0 +1,22 @@
+body {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #343452;
+  color: #FFF;
+}
+body button {
+  background-color: #689031;
+  height: 32px;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospace;
+}
+body #test-phrase {
+  display: none;
+  font-size: 32px;
+  margin-top: 32px;
+}
