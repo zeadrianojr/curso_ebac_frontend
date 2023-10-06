@@ -1,0 +1,24 @@
+{
+  "name": "curso_ebac_frontend",
+  "version": "1.0.0",
+  "description": "BEM é uma metodologia que auxília a criação de componenetes reutilizáveis e compartilhamento de códigos no desenvolvimento Front-end.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass main.scss main2.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeadrianojr/curso_ebac_frontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zeadrianojr/curso_ebac_frontend/issues"
+  },
+  "homepage": "https://github.com/zeadrianojr/curso_ebac_frontend#readme",
+  "devDependencies": {
+    "sass": "^1.69.0"
+  }
+}
